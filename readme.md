@@ -1,4 +1,4 @@
 #PHPASTA
 
-This project is only for review and learning purposes of the the PHP  
-Programming Language. Happy programming!  
+This project is made intended for review and learning purposes only of the the PHP  
+Programming Language. Happy programming!
