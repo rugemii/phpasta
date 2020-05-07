@@ -91,4 +91,8 @@ print_r($partnerships);
 echo "<br><br>";
 print_r($partnerships[0]);
 
+//knew iterators and foreach
+
+
+
 ?>
