@@ -69,7 +69,7 @@ changeMouseName($mouseName);
 
 echo $mouseName . PHP_EOL;
 
-// and it works
+// and it workscls
 // in order to make some changes on the outside variable of the 
 // scope of a function, it should be passed by reference 
 
