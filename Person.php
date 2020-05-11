@@ -6,6 +6,11 @@ class Person {
 	private $nickname = 'Procopio';
 	public static $hobby = 'Music';
 	private const YELL = 'Thanks!';
+	private $eyeColor;
+
+	function __construct() {
+		$this->eyeColor = 'black';
+	}
 
 	function getName() {
 		return $this->name;
@@ -22,6 +27,10 @@ class Person {
 	function getYell() {
 		return self::YELL;
 	}
+
+	function __destruct() {
+		echo PHP_EOL . 'Person has been vaporized';
+	}
 }
 
 // when referencing a data or behavior from a class
@@ -31,11 +40,26 @@ class Person {
 // to get the value of a const inside a class use :: operator to get it
 // only if it's public
 
+/*
 $samplePerson = new Person();
+// to destroy an object
+// unset($samplePerson);
+// return;
 echo $samplePerson->name . PHP_EOL;
 echo $samplePerson->getHobby() . PHP_EOL;
 echo $samplePerson->getNickname() . PHP_EOL;
 echo $samplePerson->getName() . PHP_EOL;
-echo $samplePerson->getyELL();
+echo $samplePerson->getYell();
+*/
+// assign default values to an instance of an object
+// by supplying values to the parameter of constructor function
+
+/*
+function construct($name = 'Diaz', $love = 'Me') {
+	
+}
+*/
+
+
 
 ?>
