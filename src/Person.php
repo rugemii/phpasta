@@ -7,6 +7,7 @@ class Person {
 	public static $hobby = 'Music';
 	private const YELL = 'Thanks!';
 	private $eyeColor;
+	protected $hairColor = 'brown';
 
 	function __construct() {
 		$this->eyeColor = 'black';
@@ -26,6 +27,10 @@ class Person {
 
 	function getYell() {
 		return self::YELL;
+	}
+
+	function getHairColor() {
+		return $this->hairColor;
 	}
 
 	function __destruct() {
