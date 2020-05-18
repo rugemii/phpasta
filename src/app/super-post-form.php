@@ -1,5 +1,7 @@
 <?php
 
+// get all the data first
+
 $heroes = [
 	"a-bomb" => [
 		"id" => 1017100,
@@ -9,11 +11,13 @@ $heroes = [
 		"id" => 1009220,
 		"name" => "Captain America"
 	],
-	"black-panther" = [
+	"black-panther" => [
 		"id" => 1009187,
 		"name" => "Black Panther"
 	]
 ];
+
+// process the data
 
 $selectedHero = [];
 // process the post request, if any
@@ -30,3 +34,30 @@ if (array_key_exists('hero', $_POST)) {
 }
 
 ?>
+
+<!-- feed it to the view -->
+
+<div style="background: #eee">
+	<p>Selected hero: </p>
+	<?php if ($selectedHero) { ?>
+		<h3><?= $selectedHero['name'] ?></h3>
+		<h4>ID: <?= $selectedHero['id'] ?></h4>
+	<?php } else { ?>
+		<p>None.</p>
+	<?php } ?>
+</div>
+
+<p>The value of $_POST is : </p>
+<pre><?= var_export($_POST, true); ?></pre>
+
+<form action="./super-post-form.php" method="post"
+	enctype="application/x-www-form-urlencoded">
+	<label for="hero_select">Select your hero: </label>
+	<select name="hero" id="hero_select">
+		<?php foreach ($heroes as $heroId => $heroData) { ?>
+			<option value="<?= $heroId ?>"><?= $heroData['name'] ?>
+			</option>
+		<?php } ?>
+	</select>
+	<input type="submit" value="show">
+</form>
