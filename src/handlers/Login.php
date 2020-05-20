@@ -12,5 +12,4 @@ class Login extends Handler {
 	}
 }
 
-
 ?>
