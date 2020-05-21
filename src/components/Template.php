@@ -23,10 +23,15 @@ class Template {
 	// templates need data to render something
 	// and included that template file, smooth
 	function render(array $data = []): string {
+		// always get the data first
+		// in mvc , model should be included then the view
+		// view <-> controller <-> model 
 		extract($data, EXTR_OVERWRITE);
 		ob_start();
 		require $this->getFilepath();
 		$rendered = ob_get_clean();
+		// the buffer that contains the data will be stored in a string
+		// and passed to the handler
 		return (string)$rendered;
 	}
 }

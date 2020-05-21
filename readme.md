@@ -74,3 +74,6 @@ handle method and output the right template for that. Awesome, "i can handle it"
 It's not magic that when the user type a url on the browser, we already know where to find the right script to be called 
 or who should handle that and output something on the display, thus we have a thing that will handle that, 
 the so called router, give the path to him and he knows the way, whose going to handle (template inside it) that.
+
+What's confusing is where all the data goes, what is visible on the code, what can be called and you have no clue what's
+the state of those data and are they going to be displayed or appear on the page.
