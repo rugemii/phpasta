@@ -8,7 +8,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">Learning PHP</a>
+    <a class="navbar-brand" href="/">Learning PHP (still in maintenance)</a>
 
     <div class="collapse navbar-collapse show">
         <ul class="navbar-nav mr-auto">

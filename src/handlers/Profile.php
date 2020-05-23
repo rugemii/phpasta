@@ -15,8 +15,20 @@ class Profile extends Handler {
 		return (new \Components\Template('profile'))->render([
 			'username' => $_SESSION['username'],
 			'sessionData' => var_export($_SESSION, true)
-		]);	
+		]);
+
+		$formError = [];
+		if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+			$formName = $_POST['name'] ?? '';
+			$formEmail = $_POST['email'] ?? '';
+			$formMessage = $_POST['message'] ?? '';
+		}
 	}
+
+	// filter_var() for validating the email value
+	// FILTER_VALIDATE_EMAIL
+
+	// least 40
 
 	public function getTitle(): string {
 		return 'Profile - ' . parent::getTitle();
