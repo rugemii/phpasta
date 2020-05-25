@@ -77,3 +77,16 @@ the so called router, give the path to him and he knows the way, whose going to 
 
 What's confusing is where all the data goes, what is visible on the code, what can be called and you have no clue what's
 the state of those data and are they going to be displayed or appear on the page.
+
+##### Data Persistence
+
+So this chapter involves file input/output handling, data storage and databases. File 
+system and persistent storage come hand in hand but when the former is not present 
+it is very critical due to its availability. File manipulation, the read and write 
+is relative to the working script and not to the current working directory, where
+the server is started, so we have magic constants. So this magic constants change their 
+value depending on where they are called or used. A resource in PHP is a pointer to an 
+external resource how clear is that to me or to a data stream.
+
+Like a normal user action on a file, php provides open, read functions. Also a function 
+for measureing the memory usage of the operation.

@@ -9,14 +9,17 @@ if (array_key_exists('uploadFile', $_FILES)) {
 }
 
 switch ($uploadInfo['error']) {
+	// if the uploaded file is ok
 	case UPLOAD_ERR_OK: 
 		mime_content_type ($uploadInfo['tmp_name' ]);
 		move_uploaded_file($uploadInfo['tmp_name'], $targetFilename);
 		break;
 	case UPLOAD_ERR_INI_SIZE:
+	// pretty self explanatory error in size
 		echo printf('Failed to upload [%s] : the file is too big.', $uploadInfo['name']);
 		break;
 	case UPLOAD_ERR_NO_FILE:
+	// no file was uploaded the array is empty
 		echo 'No file was uploaded';
 		break;
 	default:
