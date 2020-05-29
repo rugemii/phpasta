@@ -89,4 +89,12 @@ value depending on where they are called or used. A resource in PHP is a pointer
 external resource how clear is that to me or to a data stream.
 
 Like a normal user action on a file, php provides open, read functions. Also a function 
-for measureing the memory usage of the operation.
+for measureing the memory usage of the operation. Well i've heard wrappers before especially
+on sass and it's implementation to other programming languages specifically on c. In my 
+own terms, it's a layer to run the main code. I forgot to note which is better when reading 
+a file, file_get_contents put the data on to memory first so it's not suited for large 
+files and fread does the job better.
+
+In terms of writing to a file, fwrite() function is more preferred because it keeps the 
+resource pointer open for writing often applicable for repeated writes in case of loggers.
+file_put_contents function on the otherhand, is good for one time operation.

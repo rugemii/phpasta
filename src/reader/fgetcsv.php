@@ -11,6 +11,8 @@ $recordNumber = 0;
 
 while (!feof($fileResource)) {
 	$recordNumber++;
+	// fascinating don't have to give a parameter to track
+	// line position
 	$line = fgetcsv($fileResource);
 	echo sprintf('Line %d: %s', $recordNumber, print_r($line,true));
 }
