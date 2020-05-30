@@ -97,4 +97,11 @@ files and fread does the job better.
 
 In terms of writing to a file, fwrite() function is more preferred because it keeps the 
 resource pointer open for writing often applicable for repeated writes in case of loggers.
-file_put_contents function on the otherhand, is good for one time operation.
+file_put_contents function on the otherhand, is good for one time operation. So we're on
+the deletion of files, and this is unlink function.
+
+##### Databases
+
+So we're now on Databases and PDO or PHP Database Objects extension will be use for the 
+following exercises. I need to make sure i have mySQL running and pdo_mysql driver
+installed, also look at the configuration. 

@@ -1,1 +1,9 @@
-file written with fwrite().
+written with fileputcontent
+written with fileputcontent
+written with fileputcontent
+written with fileputcontent
+written with fileputcontent
+written with fileputcontent
+written with fileputcontent
+written with fileputcontent
+written with fileputcontent
