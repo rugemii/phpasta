@@ -56,6 +56,4 @@ echo $firstMagic->element . PHP_EOL;
 // can be check if it has value and the value can be removed
 // it's noted that it should be accessed as public
 
-
-
 ?>

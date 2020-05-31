@@ -104,4 +104,17 @@ the deletion of files, and this is unlink function.
 
 So we're now on Databases and PDO or PHP Database Objects extension will be use for the 
 following exercises. I need to make sure i have mySQL running and pdo_mysql driver
-installed, also look at the configuration. 
+installed, also look at the configuration. I manually installed (sounds normal) the MySQL 
+server from a zip file so i have to go through the documentation to atleast know some 
+details on it. On a larger perspective, a typical web application solves business problems.
+Together with the previous lessons, data were processes first through request and being 
+handled by the right handler. What's in my mind is, the type of request (post, get, put, 
+etc). Where do object creation takes place? is in the handler (controller) receives or 
+being included in the handler or in the view (template). Anyway, this will be cleared 
+throughout the book.
+
+So we tackle the feature of PDO and PDO Statement which feature templated queries to 
+prevent sql injection attacks - an input that is malicious which can be executed on 
+the server to destroy data or information, frequently result from not escaping user 
+input and trusting all the user's effort on the system. It's worth mentioning to know 
+also the config and options that can be passed to each of the servers in a web application.
