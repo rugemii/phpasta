@@ -5,6 +5,7 @@ $statement = "SELECT * FROM users";
 
 // i used exec instead of query just for experiment purposes
 // edited : use query instead, thrown an exception
+// pdo::query returns a result set
 $result = $phpDataObject->query($statement);
 
 if ($result === false) {
@@ -14,7 +15,9 @@ if ($result === false) {
 }
 
 echo "All Records" . PHP_EOL;
+// if the there's a result in the query
 while ($record = $result->fetch()) {
+	// join array elements with string
 	echo implode("\t", $record) . PHP_EOL;
 }
 
