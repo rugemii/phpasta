@@ -174,3 +174,25 @@ time to plan the activity and execute it after: So here it goes.
 	- all data will be fed into the template
 
 - suggested workflow
+	
+	- i can start with the frontend first
+	- start by domain first like generalizing the functionalities or grouping it.
+		- user management
+			- logging in
+			- logging out
+		- session management
+			- when to create a session
+			- when to destroy a session
+		- contact management
+			- creation
+			- read
+			- update
+			- delete
+	- validations will be always on the way
+	- page authorization
+		- when can a user access a certain page
+			- when a session is created
+			- a successful authentication means a session creation
+			- can a user visit the logout page when not logged in? no
+			- a user can access the profile page when logged in
+			- 
