@@ -118,3 +118,59 @@ prevent sql injection attacks - an input that is malicious which can be executed
 the server to destroy data or information, frequently result from not escaping user 
 input and trusting all the user's effort on the system. It's worth mentioning to know 
 also the config and options that can be passed to each of the servers in a web application.
+Now done with the basic operation on tables and row and simple queries, tackling on 
+patterns right now. On the list is singleton pattern.
+
+##### The Singleton Pattern
+
+So this pattern was used for instantiating a connection object to the database to make sure 
+that only one connection is being used throughout an application, isn't that bad? what if many 
+processes or calls was being run on the application, is there a waiting mechanism, wait for this 
+process to be done then execute the next one. But i have read database servers call something 
+that is a pool, where concurrent connections are being done on a single point, not really. Anyway,
+proceeding with the lesson.
+
+##### Contact Management Application
+
+An actvity was introduced after 4 Chapters of study, i don't have the time to code but i have the 
+time to plan the activity and execute it after: So here it goes.
+
+- Identify the features and requirements first and the following are those:
+	
+	- users can create an account
+	- login to manage a private list of contacts
+	- make use of database to store information and operation on it (CRUD)
+		- user login data 
+		- user private contact data
+	- create pages for the following
+		- homepage
+		- login
+		- sign up
+		- contact list
+			- add
+			- edit
+
+- things to consider in this project
+
+	- the entities
+		- users
+		- contact
+
+	- the authentication
+		- user should be able to access if he/she is part of the system
+	- the session management
+		- the user should be able to access authorized page
+		- redirection to the right page
+	- form validation
+		- filter
+			- email
+			- password
+			- contact number
+		- htmlentities
+
+- all of the operations will happen in the backend
+	
+	- error info 
+	- all data will be fed into the template
+
+- suggested workflow
